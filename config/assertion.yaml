@@ -1,0 +1,5 @@
+# Assertion configuration
+labels:
+  - isNegated
+  - isFamily
+  - isHistorical

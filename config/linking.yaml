@@ -1,0 +1,4 @@
+# Entity linking configuration
+icd10_index_path: models/embeddings/icd10.index
+rxnorm_index_path: models/embeddings/rxnorm.index
+top_k: 10

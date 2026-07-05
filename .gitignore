@@ -22,19 +22,17 @@ Thumbs.db
 *.tmp
 *.swp
 
-# Competition data and generated artifacts
+# Competition data (BTC)
 data/input/input/
-data/train/
-data/dev/
-output/
-models/
-reports/
 
-# Keep structure folders if needed
-!data/.gitkeep
-!data/input/.gitkeep
-!data/train/.gitkeep
-!data/dev/.gitkeep
-!models/.gitkeep
-!output/.gitkeep
-!reports/.gitkeep
+# Generated artifacts and heavy files
+output/*.json
+output/*.zip
+models/**/*.pt
+models/**/*.bin
+models/**/*.safetensors
+models/**/*.ckpt
+models/**/*.index
+
+# Keep folder structure tracked
+!**/.gitkeep

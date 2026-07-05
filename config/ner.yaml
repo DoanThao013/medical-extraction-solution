@@ -1,0 +1,3 @@
+# NER configuration
+model_name: placeholder
+max_length: 512

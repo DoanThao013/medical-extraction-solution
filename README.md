@@ -65,8 +65,7 @@ medical-extraction-solution/
 │   │   └── infer_relation.py
 │   └── pipeline.py
 ├── requirements.txt
-├── README.md
-└── PROJECT_STRUCTURE_GUIDE.md
+└── README.md
 ```
 
 Lưu ý:
