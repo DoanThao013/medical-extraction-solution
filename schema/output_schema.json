@@ -1,0 +1,145 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "output-schema",
+  "title": "Schema for the output of Vietnamese Medical NLP Challenge.",
+  "description": "Output schema for one input clinical document in the Vietnamese Medical NLP Challenge.",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/entity"
+  },
+  "definitions": {
+    "assertion": {
+      "type": "string",
+      "enum": [
+        "isNegated",
+        "isFamily",
+        "isHistorical"
+      ]
+    },
+    "entity_type": {
+      "type": "string",
+      "enum": [
+        "TRIỆU_CHỨNG",
+        "TÊN_XÉT_NGHIỆM",
+        "KẾT_QUẢ_XÉT_NGHIỆM",
+        "CHẨN_ĐOÁN",
+        "THUỐC"
+      ]
+    },
+    "entity": {
+      "type": "object",
+      "required": [
+        "text",
+        "position",
+        "type",
+        "assertions",
+        "candidates"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Cụm từ trong input được xác định là khái niệm y tế. QUY ƯỚC SPAN: (1) TÊN_XÉT_NGHIỆM: nếu dấu '%' đứng liền ngay sau tên viết tắt xét nghiệm (vd 'NEUT%', 'LYPH%') thì '%' và phần diễn giải trong ngoặc đi kèm (nếu có, vd '(Tỷ lệ % bạch cầu trung tính)') PHẢI được gộp vào span, không tách riêng. (2) CHẨN_ĐOÁN: nếu từ 'bệnh' đứng ngay trước tên chẩn đoán (vd 'bệnh trào ngược dạ dày - thực quản') thì 'bệnh' PHẢI được giữ trong span, không loại bỏ."
+        },
+        "position": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "description": "Vị trí ký tự bắt đầu và kết thúc (tính từ 0) theo quy định BTC.Bắt buộc thỏa input[position[0]:position[1]] == text (khớp offset chính xác theo quy ước span mô tả ở field 'text')"
+        },
+        "type": {
+          "$ref": "#/definitions/entity_type"
+        },
+        "assertions": {
+          "type": "array",
+          "description": "Trường bắt buộc. Mảng rỗng nếu không có assertion nào được áp dụng.",
+          "items": {
+            "$ref": "#/definitions/assertion"
+          },
+          "uniqueItems": true,
+          "maxItems": 3
+        },
+        "candidates": {
+          "type": "array",
+          "description": "Trường bắt buộc. Mảng rỗng nếu không có candidates.",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "TRIỆU_CHỨNG"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "candidates": {
+                "maxItems": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "TÊN_XÉT_NGHIỆM"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "assertions": {
+                "maxItems": 0
+              },
+              "candidates": {
+                "maxItems": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "KẾT_QUẢ_XÉT_NGHIỆM"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "assertions": {
+                "maxItems": 0
+              },
+              "candidates": {
+                "maxItems": 0
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+  
+}
