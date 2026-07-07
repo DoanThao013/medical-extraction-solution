@@ -1,0 +1,149 @@
+version: 1.0
+name: medical_extraction_log_schema
+description: >
+  Dac ta cau truc file log cho pipeline trich xuat y khoa.
+  Moi dong log nen la mot JSON object (JSON Lines) de de tim kiem va tong hop.
+
+log_file:
+  directory: reports/logs
+  filename_pattern: run_{run_id}.jsonl
+  encoding: utf-8
+  rotation:
+    enabled: true
+    max_size_mb: 50
+    keep_files: 5
+
+record_structure:
+  required_fields:
+    - timestamp
+    - level
+    - run_id
+    - stage
+    - event
+    - message
+  optional_fields:
+    - input_file
+    - output_file
+    - duration_ms
+    - status
+    - metrics
+    - error
+    - context
+
+field_definitions:
+  timestamp:
+    type: string
+    format: ISO-8601
+    example: "2026-07-07T10:12:33.124Z"
+  level:
+    type: string
+    enum: [DEBUG, INFO, WARNING, ERROR, CRITICAL]
+    example: "INFO"
+  run_id:
+    type: string
+    description: ID duy nhat cho moi lan chay pipeline
+    example: "run_20260707_101200"
+  stage:
+    type: string
+    enum: [INGEST, NER, LINKING, ASSERTION, RELATION, EXPORT, VALIDATE]
+    example: "NER"
+  event:
+    type: string
+    description: Ten su kien trong stage
+    example: "entity_extraction_completed"
+  message:
+    type: string
+    example: "Extracted entities successfully"
+  input_file:
+    type: string
+    example: "data/input/input/1.txt"
+  output_file:
+    type: string
+    example: "output/1.json"
+  duration_ms:
+    type: integer
+    minimum: 0
+    example: 124
+  status:
+    type: string
+    enum: [started, success, failed, skipped]
+    example: "success"
+  metrics:
+    type: object
+    description: So lieu thong ke theo tung stage
+    properties:
+      entity_count:
+        type: integer
+        example: 18
+      candidate_count:
+        type: integer
+        example: 34
+      text_score:
+        type: number
+        example: 0.92
+      assertions_score:
+        type: number
+        example: 0.85
+      candidates_score:
+        type: number
+        example: 0.81
+  error:
+    type: object
+    properties:
+      code:
+        type: string
+        example: "E_SCHEMA_001"
+      type:
+        type: string
+        example: "ValidationError"
+      detail:
+        type: string
+        example: "Missing field 'position' in output object"
+      stacktrace:
+        type: string
+  context:
+    type: object
+    description: Thong tin bo sung de debug
+
+jsonl_examples:
+  - timestamp: "2026-07-07T10:12:33.124Z"
+    level: INFO
+    run_id: "run_20260707_101200"
+    stage: INGEST
+    event: "input_loaded"
+    message: "Loaded input file"
+    input_file: "data/input/input/1.txt"
+    duration_ms: 8
+    status: success
+
+  - timestamp: "2026-07-07T10:12:33.498Z"
+    level: INFO
+    run_id: "run_20260707_101200"
+    stage: NER
+    event: "entity_extraction_completed"
+    message: "NER completed"
+    input_file: "data/input/input/1.txt"
+    duration_ms: 232
+    status: success
+    metrics:
+      entity_count: 16
+
+  - timestamp: "2026-07-07T10:12:34.032Z"
+    level: ERROR
+    run_id: "run_20260707_101200"
+    stage: VALIDATE
+    event: "schema_validation_failed"
+    message: "Output schema validation failed"
+    output_file: "output/1.json"
+    duration_ms: 3
+    status: failed
+    error:
+      code: "E_SCHEMA_001"
+      type: "ValidationError"
+      detail: "Field 'position' must be [start, end]"
+
+best_practices:
+  - Ghi log theo JSONL de de parse va tong hop
+  - Khong ghi du lieu nhay cam benh nhan vao message
+  - Luon co run_id de trace toan bo pipeline
+  - Tach log theo stage de do hieu nang va tim loi nhanh
