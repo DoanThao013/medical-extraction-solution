@@ -26,7 +26,8 @@ medical-extraction-solution/
 │   ├── train/                 # dữ liệu train nội bộ
 │   ├── dev/                   # dữ liệu dev nội bộ
 │   ├── icd10/
-│   │   └── icd10_mapping.csv
+│   │   ├── icd10_catalog_normalized.csv
+│   │   └── icd10_catalog_normalized.meta.json
 │   └── rxnorm/
 │       └── rxnorm_mapping.csv
 ├── models/
@@ -47,6 +48,7 @@ medical-extraction-solution/
 │   ├── error_analysis.md
 │   └── submission_log.md
 ├── scripts/
+│   ├── prepare_icd10_catalog.py
 │   ├── run_pipeline.py
 │   ├── build_index.py
 │   ├── validate_output.py
@@ -76,10 +78,10 @@ Lưu ý:
 | Thư mục | Ý nghĩa | Thành phần chính |
 |---|---|---|
 | `config` | Chứa toàn bộ tham số chạy, model path, ngưỡng score, top-k candidates; giúp thay đổi cấu hình mà không cần sửa code. | `project.yaml`, `ner.yaml`, `linking.yaml`, `assertion.yaml` |
-| `data` | Chứa dữ liệu đầu vào, dữ liệu huấn luyện/đánh giá nội bộ và dữ liệu mapping phục vụ entity linking. | `input/`, `train/`, `dev/`, `icd10/`, `rxnorm/` |
+| `data` | Chứa dữ liệu đầu vào, dữ liệu huấn luyện/đánh giá nội bộ và dữ liệu catalog/mapping phục vụ entity linking. | `input/`, `train/`, `dev/`, `icd10/`, `rxnorm/` |
 | `models` | Lưu model NER đã huấn luyện và vector index cho ICD-10, RxNorm; tránh phụ thuộc máy cụ thể. | `ner_model/`, `embeddings/` |
 | `src` | Chứa logic nghiệp vụ chính theo module; `pipeline.py` là điểm vào xử lý end-to-end. | `ner/`, `entity_linking/`, `assertions/`, `relations/`, `pipeline.py` |
-| `scripts` | Chứa script thao tác vận hành: build index, infer 100 file, validate output, zip nộp bài. | `build_index.py`, `run_pipeline.py`, `validate_output.py`, `zip_submission.py` |
+| `scripts` | Chứa script thao tác vận hành: chuẩn hóa catalog ICD-10, build index, infer 100 file, validate output, zip nộp bài. | `prepare_icd10_catalog.py`, `build_index.py`, `run_pipeline.py`, `validate_output.py`, `zip_submission.py` |
 | `output` | Chứa kết quả JSON để nộp BTC, yêu cầu đúng tên từ 1.json đến 100.json. | `1.json` ... `100.json` |
 | `reports` | Chứa tài liệu EDA, phân tích lỗi, lịch sử nộp bài để phục vụ giải trình và cải tiến mô hình. | `eda_report.md`, `error_analysis.md`, `submission_log.md` |
 
@@ -105,7 +107,15 @@ Quy tắc quan trọng:
 
 ### Bước 2: Chuẩn bị dữ liệu
 - Đặt 100 file input vào data/input.
-- Kiểm tra dữ liệu mapping ICD-10 và RxNorm trong data/icd10 và data/rxnorm.
+- Chuẩn hóa catalog ICD-10 bằng script:
+
+```powershell
+python scripts/prepare_icd10_catalog.py
+```
+
+- Kết quả sẽ tạo:
+	- `data/icd10/icd10_catalog_normalized.csv`
+	- `data/icd10/icd10_catalog_normalized.meta.json`
 
 ### Bước 3: Build index
 - Chạy script build_index.py để tạo icd10.index và rxnorm.index.
@@ -122,7 +132,8 @@ Quy tắc quan trọng:
 - [ ] Có requirements.txt
 - [ ] Có README.md hướng dẫn đầy đủ
 - [ ] Có model weights trong models
-- [ ] Có mapping ICD-10 và RxNorm
+- [x] Có catalog ICD-10 chuẩn hóa từ nguồn công khai
+- [ ] Hoàn thiện mapping ICD-10 synonym và RxNorm
 - [ ] Chạy được infer end-to-end
 - [ ] Tạo được output.zip đúng cấu trúc
 - [ ] Không sử dụng API ngoài cho model nộp bài
@@ -134,5 +145,6 @@ Quy tắc quan trọng:
 - Ưu tiên tính tái lập: clone repo, cài đặt, chạy lại, cho kết quả hợp lệ.
 
 
-Cập nhật lần cuối: 2026-07-05
+
+Cập nhật lần cuối: 2026-07-07
 Người phụ trách: Team Medical Extraction
