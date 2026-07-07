@@ -1,0 +1,11 @@
+{
+  "generated_at_utc": "2026-07-07T07:23:14.031413+00:00",
+  "source_url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/ICD10CM/2027/icd10cm-code-descriptions-2027.zip",
+  "source_inner_file": "icd10cm-code-descriptions-2027/icd10cm-codes-2027.txt",
+  "row_count": 74879,
+  "notes": [
+    "This file is catalog-only (no synonym mapping yet).",
+    "Disease names are currently English from ICD-10-CM source.",
+    "Vietnamese names can be enriched in a later mapping step."
+  ]
+}
