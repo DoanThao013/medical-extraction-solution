@@ -1,0 +1,885 @@
+{
+  "rxnorm": [
+    {
+      "rxcui": "1191",
+      "name": "aspirin",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Alka-Seltzer",
+        "Anacin",
+        "Anacin Advanced Headache Formula",
+        "Anacin Aspirin Regimen",
+        "Arthriten Inflammatory Pain",
+        "Ascomp",
+        "Aspergum",
+        "Aspi-Cor",
+        "BC Arthritis",
+        "BC Original Formula",
+        "Backaid IPF",
+        "Bayer Aspirin",
+        "Bromo Seltzer Antacid Pain Reliever",
+        "Bufferin",
+        "Durlaza",
+        "Ecotrin",
+        "Equagesic",
+        "Exaprin",
+        "Exaprin Plus",
+        "Excedrin",
+        "Excedrin PM Triple Action",
+        "Miniprin",
+        "Norgesic",
+        "Norwich Aspirin",
+        "Orphengesic",
+        "Pamprin Max Formula",
+        "Saleto",
+        "St. Joseph Aspirin",
+        "Stanback Headache Powder Reformulated Jan 2011",
+        "Vanquish",
+        "Vazalore",
+        "Yosprala",
+        "acetylsalicylate sodium",
+        "aspirin"
+      ],
+      "matched_from_text": "aspirin",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "6918",
+      "name": "metoprolol",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Kapspargo",
+        "Lopressor",
+        "Lopressor HCT",
+        "Toprol",
+        "metoprolol",
+        "metoprolol fumarate",
+        "metoprolol succinate",
+        "metoprolol tartrate"
+      ],
+      "matched_from_text": "metoprolol",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "202991",
+      "name": "Lasix",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "BN",
+      "synonyms": [
+        "Lasix",
+        "furosemide",
+        "lasix"
+      ],
+      "matched_from_text": "lasix",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "1808",
+      "name": "bumetanide",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Bumex",
+        "Enbumyst",
+        "bumetanide"
+      ],
+      "matched_from_text": "bumetanide",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "82122",
+      "name": "levofloxacin",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Levaquin",
+        "levofloxacin",
+        "levofloxacin anhydrous"
+      ],
+      "matched_from_text": "levofloxacin",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "6902",
+      "name": "methylprednisolone",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Depo-Medrol",
+        "HybriSil",
+        "Medrol",
+        "Solu-Medrol",
+        "methylprednisolone",
+        "methylprednisolone aceponate",
+        "methylprednisolone acetate",
+        "methylprednisolone sodium phosphate",
+        "methylprednisolone sodium succinate"
+      ],
+      "matched_from_text": "methylprednisolone",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "8640",
+      "name": "prednisone",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Deltasone",
+        "Rayos",
+        "prednisone"
+      ],
+      "matched_from_text": "prednisone",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "161",
+      "name": "acetaminophen",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Acephen",
+        "Acetadryl",
+        "Allzital",
+        "Anabar",
+        "Anacin AF",
+        "Anacin Advanced Headache Formula",
+        "Apadaz",
+        "Arthriten Inflammatory Pain",
+        "Backaid",
+        "Backaid IPF",
+        "Backprin",
+        "Bactimicina",
+        "Bupap",
+        "By Ache",
+        "Capacet",
+        "Cetafen",
+        "Combogesic",
+        "Comtrex Sore Throat Relief",
+        "Contragesic",
+        "CounterAct Pain",
+        "Dologesic",
+        "Ed Flex",
+        "Endocet",
+        "Esgic",
+        "Exaprin",
+        "Exaprin Plus",
+        "Excedrin",
+        "Excedrin Mild Headache",
+        "Excedrin PM",
+        "Excedrin PM Triple Action",
+        "Excedrin Quick Tab",
+        "Excedrin Tension Headache",
+        "Feverall",
+        "Fioricet",
+        "Fioricet with Codeine",
+        "Frenadol",
+        "Hycet",
+        "Legatrin PM",
+        "Little Fevers",
+        "Mapap",
+        "Marten-Tab",
+        "Nalocet",
+        "Ninjacof A",
+        "Norco",
+        "Nortemp",
+        "Pamprin Cramp Formula",
+        "Pamprin Max Formula",
+        "Pamprin Multi-Symptom",
+        "Panadol",
+        "Panadol Extra",
+        "Panadol PM",
+        "Percocet",
+        "Percogesic Reformulated Jan 2011",
+        "Pharbetol",
+        "Premsyn PMS",
+        "Primlev",
+        "Prolate",
+        "Redutemp",
+        "Relagesic",
+        "Repan",
+        "Ringl",
+        "Saleto",
+        "Sed-Max",
+        "Tactinal",
+        "Tempra Quicklets",
+        "Tencon",
+        "Trezix",
+        "Tycolene",
+        "Tylenol",
+        "Tylenol Gelcap Extra Strength",
+        "Tylenol PM",
+        "Tylenol with Codeine",
+        "Ultracet",
+        "Unisom with Pain Relief",
+        "Vanatol",
+        "Vanquish",
+        "Verdrocet",
+        "Vtol",
+        "Zebutal",
+        "acetaminophen"
+      ],
+      "matched_from_text": "acetaminophen",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "83367",
+      "name": "atorvastatin",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Atorvaliq",
+        "Caduet",
+        "Lipitor",
+        "atorvastatin",
+        "atorvastatin calcium",
+        "atorvastatin calcium anhydrous",
+        "atorvastatin calcium propylene glycol solvate",
+        "atorvastatin calcium trihydrate"
+      ],
+      "matched_from_text": "atorvastatin",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "29046",
+      "name": "lisinopril",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Prinivil",
+        "Qbrelis",
+        "Zestoretic",
+        "Zestril",
+        "lisinopril",
+        "lisinopril anhydrous"
+      ],
+      "matched_from_text": "lisinopril",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "356778",
+      "name": "Ranexa",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "BN",
+      "synonyms": [
+        "Ranexa",
+        "ranexa",
+        "ranolazine"
+      ],
+      "matched_from_text": "ranexa",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "4603",
+      "name": "furosemide",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Disal",
+        "Furoscix",
+        "Lasix",
+        "Salix - substance",
+        "furosemide"
+      ],
+      "matched_from_text": "furosemide",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "11124",
+      "name": "vancomycin",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "vancomycin"
+      ],
+      "matched_from_text": "vancomycin",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "202433",
+      "name": "Tylenol",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "BN",
+      "synonyms": [
+        "Tylenol",
+        "acetaminophen",
+        "tylenol"
+      ],
+      "matched_from_text": "tylenol",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "4603",
+      "name": "furosemide",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Disal",
+        "Furoscix",
+        "Lasix",
+        "Salix - substance",
+        "furosemide"
+      ],
+      "matched_from_text": "furosemide",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "1307106",
+      "name": "succinate",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "sodium succinate anhydrous",
+        "succinate"
+      ],
+      "matched_from_text": "succinate",
+      "lookup_method": "approximate"
+    },
+    {
+      "rxcui": "224913",
+      "name": "Dilaudid",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "BN",
+      "synonyms": [
+        "Dilaudid",
+        "dilaudid",
+        "hydromorphone",
+        "hydromorphone hydrochloride"
+      ],
+      "matched_from_text": "dilaudid",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "202421",
+      "name": "Coumadin",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "BN",
+      "synonyms": [
+        "Coumadin",
+        "coumadin",
+        "warfarin",
+        "warfarin sodium"
+      ],
+      "matched_from_text": "coumadin",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "1202",
+      "name": "atenolol",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": null,
+      "synonyms": [
+        "Tenoretic",
+        "Tenormin",
+        "atenolol"
+      ],
+      "matched_from_text": "atenolol",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "3640",
+      "name": "doxycycline",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Acticlate",
+        "Adoxa",
+        "Alodox",
+        "Avidoxy",
+        "Doryx",
+        "Doxy",
+        "Mondoxyne",
+        "Monodox",
+        "Morgidox",
+        "Okebo",
+        "Oracea",
+        "Periostat",
+        "Targadox",
+        "Vibramycin",
+        "doxycycline",
+        "doxycycline anhydrous",
+        "doxycycline calcium",
+        "doxycycline hyclate",
+        "doxycycline hydrochloride",
+        "doxycycline monohydrate"
+      ],
+      "matched_from_text": "doxycycline",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "3251",
+      "name": "desmopressin",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": null,
+      "synonyms": [
+        "DDAVP",
+        "Desmoda",
+        "Nocdurna",
+        "Noctiva",
+        "desmopressin",
+        "desmopressin acetate"
+      ],
+      "matched_from_text": "desmopressin",
+      "lookup_method": "approximate"
+    },
+    {
+      "rxcui": "282386",
+      "name": "Gleevec",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "BN",
+      "synonyms": [
+        "Gleevec",
+        "gleevec",
+        "imatinib",
+        "imatinib mesylate"
+      ],
+      "matched_from_text": "gleevec",
+      "lookup_method": "approximate"
+    },
+    {
+      "rxcui": "519",
+      "name": "allopurinol",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Aloprim",
+        "Zyloprim",
+        "allopurinol",
+        "allopurinol sodium"
+      ],
+      "matched_from_text": "allopurinol",
+      "lookup_method": "approximate"
+    },
+    {
+      "rxcui": "7278",
+      "name": "albuterolipratropium nebulizer",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": null,
+      "synonyms": [
+        "albuterolipratropium nebulizer"
+      ],
+      "matched_from_text": "albuterolipratropium nebulizer",
+      "lookup_method": "approximate"
+    },
+    {
+      "rxcui": "352777",
+      "name": "Mucinex",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "BN",
+      "synonyms": [
+        "Mucinex",
+        "guaifenesin",
+        "mucinex"
+      ],
+      "matched_from_text": "mucinex",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "435",
+      "name": "albuterol",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Airsupra",
+        "Combivent",
+        "ProAir",
+        "Proventil",
+        "Ventolin",
+        "albuterol",
+        "albuterol nebs",
+        "albuterol sulfate"
+      ],
+      "matched_from_text": "albuterol nebs",
+      "lookup_method": "approximate"
+    },
+    {
+      "rxcui": "18631",
+      "name": "azithromycin",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "AzaSite",
+        "Zithromax",
+        "azithromycin",
+        "azithromycin anhydrous",
+        "azithromycin dihydrate",
+        "azithromycin monohydrate",
+        "azithromycin sodium dihydrogen phosphate"
+      ],
+      "matched_from_text": "azithromycin",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "2191",
+      "name": "ceftazidime",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Avycaz",
+        "Fortaz",
+        "Tazicef",
+        "ceftazidime",
+        "ceftazidime anhydrous",
+        "ceftazidime pentahydrate",
+        "ceftazidime sodium"
+      ],
+      "matched_from_text": "ceftazidime",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "703",
+      "name": "amiodarone",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Nexterone",
+        "Pacerone",
+        "amiodarone",
+        "amiodarone hydrochloride"
+      ],
+      "matched_from_text": "amiodarone",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "32968",
+      "name": "clopidogrel",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Plavix",
+        "clopidogrel",
+        "clopidogrel bisulfate"
+      ],
+      "matched_from_text": "clopidogrel",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "221124",
+      "name": "metoprolol succinate",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "PIN",
+      "synonyms": [
+        "Kapspargo",
+        "Toprol",
+        "metoprolol",
+        "metoprolol succinate"
+      ],
+      "matched_from_text": "metoprolol succinate",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "203563",
+      "name": "Cipro",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "BN",
+      "synonyms": [
+        "Cipro",
+        "cipro",
+        "ciprofloxacin",
+        "ciprofloxacin hydrochloride"
+      ],
+      "matched_from_text": "cipro",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "151399",
+      "name": "Bactrim",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "BN",
+      "synonyms": [
+        "Bactrim",
+        "bactrim",
+        "sulfamethoxazole",
+        "trimethoprim"
+      ],
+      "matched_from_text": "bactrim",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "38413",
+      "name": "torsemide",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Soaanz",
+        "Upcard",
+        "torsemide"
+      ],
+      "matched_from_text": "torsemide",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "274783",
+      "name": "insulin glargine",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Basaglar",
+        "Lantus",
+        "Rezvoglar",
+        "Semglee",
+        "Soliqua",
+        "Toujeo",
+        "insulin glargine",
+        "insulin glargine-aglr",
+        "insulin glargine-yfgn"
+      ],
+      "matched_from_text": "insulin glargine",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "6057",
+      "name": "isosorbide",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "dimethyl isosorbide",
+        "isosorbide",
+        "isosorbide mononitrate"
+      ],
+      "matched_from_text": "isosorbide",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "301542",
+      "name": "rosuvastatin",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Crestor",
+        "Ezallor",
+        "Roszet",
+        "rosuvastatin",
+        "rosuvastatin calcium"
+      ],
+      "matched_from_text": "rosuvastatin",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "20352",
+      "name": "carvedilol",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Coreg",
+        "carvedilol",
+        "carvedilol phosphate"
+      ],
+      "matched_from_text": "carvedilol",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "4917",
+      "name": "nitroglycerin",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Gonitro",
+        "Nitro-Bid",
+        "Nitro-Dur",
+        "NitroMist",
+        "Nitrolingual",
+        "Nitrostat",
+        "Rectiv",
+        "nitroglycerin"
+      ],
+      "matched_from_text": "nitroglycerin",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "4917",
+      "name": "nitroglycerin",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Gonitro",
+        "Nitro-Bid",
+        "Nitro-Dur",
+        "NitroMist",
+        "Nitrolingual",
+        "Nitrostat",
+        "Rectiv",
+        "nitroglycerin",
+        "ntg"
+      ],
+      "matched_from_text": "ntg",
+      "lookup_method": "approximate"
+    },
+    {
+      "rxcui": "6470",
+      "name": "lorazepam",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Ativan",
+        "Loreev",
+        "lorazepam"
+      ],
+      "matched_from_text": "lorazepam",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "202479",
+      "name": "Ativan",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "BN",
+      "synonyms": [
+        "Ativan",
+        "ativan",
+        "lorazepam"
+      ],
+      "matched_from_text": "ativan",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "8782",
+      "name": "propofol",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Diprivan",
+        "Propoflo",
+        "Propovan",
+        "Propoven",
+        "propofol",
+        "propofol lipid emulsion"
+      ],
+      "matched_from_text": "propofol",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "8153",
+      "name": "phentolamine",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "OraVerse",
+        "Ryzumvi",
+        "phentolamine",
+        "phentolamine mesylate"
+      ],
+      "matched_from_text": "phentolamine",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "227559",
+      "name": "Levophed",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "BN",
+      "synonyms": [
+        "Levophed",
+        "levophed",
+        "norepinephrine",
+        "norepinephrine bitartrate"
+      ],
+      "matched_from_text": "levophed",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "3443",
+      "name": "diltiazem",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Cardizem",
+        "Cartia",
+        "Dilt",
+        "Diltzac",
+        "Matzim",
+        "Taztia",
+        "Tiadylt",
+        "Tiazac",
+        "diltiazem",
+        "diltiazem hydrochloride",
+        "diltiazem malate"
+      ],
+      "matched_from_text": "diltiazem",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "7052",
+      "name": "morphine",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Duramorph",
+        "Infumorph",
+        "Kadian",
+        "MS Contin",
+        "Mitigo",
+        "morphine",
+        "morphine hydrochloride",
+        "morphine liposomal",
+        "morphine sulfate",
+        "morphine sulfate liposomal",
+        "morphine tartrate"
+      ],
+      "matched_from_text": "morphine",
+      "lookup_method": "exact"
+    },
+    {
+      "rxcui": "11289",
+      "name": "warfarin",
+      "ingredient": null,
+      "dose_form": null,
+      "tty": "IN",
+      "synonyms": [
+        "Coumadin",
+        "Jantoven",
+        "warfarin",
+        "warfarin potassium",
+        "warfarin sodium"
+      ],
+      "matched_from_text": "warfarin",
+      "lookup_method": "exact"
+    }
+  ]
+}

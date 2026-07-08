@@ -1,0 +1,49 @@
+rxcui,name,tty,matched_from_text,lookup_method,synonyms
+1191,aspirin,IN,aspirin,exact,Alka-Seltzer|Anacin|Anacin Advanced Headache Formula|Anacin Aspirin Regimen|Arthriten Inflammatory Pain|Ascomp|Aspergum|Aspi-Cor|BC Arthritis|BC Original Formula|Backaid IPF|Bayer Aspirin|Bromo Seltzer Antacid Pain Reliever|Bufferin|Durlaza|Ecotrin|Equagesic|Exaprin|Exaprin Plus|Excedrin|Excedrin PM Triple Action|Miniprin|Norgesic|Norwich Aspirin|Orphengesic|Pamprin Max Formula|Saleto|St. Joseph Aspirin|Stanback Headache Powder Reformulated Jan 2011|Vanquish|Vazalore|Yosprala|acetylsalicylate sodium|aspirin
+6918,metoprolol,IN,metoprolol,exact,Kapspargo|Lopressor|Lopressor HCT|Toprol|metoprolol|metoprolol fumarate|metoprolol succinate|metoprolol tartrate
+202991,Lasix,BN,lasix,exact,Lasix|furosemide|lasix
+1808,bumetanide,IN,bumetanide,exact,Bumex|Enbumyst|bumetanide
+82122,levofloxacin,IN,levofloxacin,exact,Levaquin|levofloxacin|levofloxacin anhydrous
+6902,methylprednisolone,IN,methylprednisolone,exact,Depo-Medrol|HybriSil|Medrol|Solu-Medrol|methylprednisolone|methylprednisolone aceponate|methylprednisolone acetate|methylprednisolone sodium phosphate|methylprednisolone sodium succinate
+8640,prednisone,IN,prednisone,exact,Deltasone|Rayos|prednisone
+161,acetaminophen,IN,acetaminophen,exact,Acephen|Acetadryl|Allzital|Anabar|Anacin AF|Anacin Advanced Headache Formula|Apadaz|Arthriten Inflammatory Pain|Backaid|Backaid IPF|Backprin|Bactimicina|Bupap|By Ache|Capacet|Cetafen|Combogesic|Comtrex Sore Throat Relief|Contragesic|CounterAct Pain|Dologesic|Ed Flex|Endocet|Esgic|Exaprin|Exaprin Plus|Excedrin|Excedrin Mild Headache|Excedrin PM|Excedrin PM Triple Action|Excedrin Quick Tab|Excedrin Tension Headache|Feverall|Fioricet|Fioricet with Codeine|Frenadol|Hycet|Legatrin PM|Little Fevers|Mapap|Marten-Tab|Nalocet|Ninjacof A|Norco|Nortemp|Pamprin Cramp Formula|Pamprin Max Formula|Pamprin Multi-Symptom|Panadol|Panadol Extra|Panadol PM|Percocet|Percogesic Reformulated Jan 2011|Pharbetol|Premsyn PMS|Primlev|Prolate|Redutemp|Relagesic|Repan|Ringl|Saleto|Sed-Max|Tactinal|Tempra Quicklets|Tencon|Trezix|Tycolene|Tylenol|Tylenol Gelcap Extra Strength|Tylenol PM|Tylenol with Codeine|Ultracet|Unisom with Pain Relief|Vanatol|Vanquish|Verdrocet|Vtol|Zebutal|acetaminophen
+83367,atorvastatin,IN,atorvastatin,exact,Atorvaliq|Caduet|Lipitor|atorvastatin|atorvastatin calcium|atorvastatin calcium anhydrous|atorvastatin calcium propylene glycol solvate|atorvastatin calcium trihydrate
+29046,lisinopril,IN,lisinopril,exact,Prinivil|Qbrelis|Zestoretic|Zestril|lisinopril|lisinopril anhydrous
+356778,Ranexa,BN,ranexa,exact,Ranexa|ranexa|ranolazine
+4603,furosemide,IN,furosemide,exact,Disal|Furoscix|Lasix|Salix - substance|furosemide
+11124,vancomycin,IN,vancomycin,exact,vancomycin
+202433,Tylenol,BN,tylenol,exact,Tylenol|acetaminophen|tylenol
+4603,furosemide,IN,furosemide,exact,Disal|Furoscix|Lasix|Salix - substance|furosemide
+1307106,succinate,IN,succinate,approximate,sodium succinate anhydrous|succinate
+224913,Dilaudid,BN,dilaudid,exact,Dilaudid|dilaudid|hydromorphone|hydromorphone hydrochloride
+202421,Coumadin,BN,coumadin,exact,Coumadin|coumadin|warfarin|warfarin sodium
+1202,atenolol,,atenolol,exact,Tenoretic|Tenormin|atenolol
+3640,doxycycline,IN,doxycycline,exact,Acticlate|Adoxa|Alodox|Avidoxy|Doryx|Doxy|Mondoxyne|Monodox|Morgidox|Okebo|Oracea|Periostat|Targadox|Vibramycin|doxycycline|doxycycline anhydrous|doxycycline calcium|doxycycline hyclate|doxycycline hydrochloride|doxycycline monohydrate
+3251,desmopressin,,desmopressin,approximate,DDAVP|Desmoda|Nocdurna|Noctiva|desmopressin|desmopressin acetate
+282386,Gleevec,BN,gleevec,approximate,Gleevec|gleevec|imatinib|imatinib mesylate
+519,allopurinol,IN,allopurinol,approximate,Aloprim|Zyloprim|allopurinol|allopurinol sodium
+7278,albuterolipratropium nebulizer,,albuterolipratropium nebulizer,approximate,albuterolipratropium nebulizer
+352777,Mucinex,BN,mucinex,exact,Mucinex|guaifenesin|mucinex
+435,albuterol,IN,albuterol nebs,approximate,Airsupra|Combivent|ProAir|Proventil|Ventolin|albuterol|albuterol nebs|albuterol sulfate
+18631,azithromycin,IN,azithromycin,exact,AzaSite|Zithromax|azithromycin|azithromycin anhydrous|azithromycin dihydrate|azithromycin monohydrate|azithromycin sodium dihydrogen phosphate
+2191,ceftazidime,IN,ceftazidime,exact,Avycaz|Fortaz|Tazicef|ceftazidime|ceftazidime anhydrous|ceftazidime pentahydrate|ceftazidime sodium
+703,amiodarone,IN,amiodarone,exact,Nexterone|Pacerone|amiodarone|amiodarone hydrochloride
+32968,clopidogrel,IN,clopidogrel,exact,Plavix|clopidogrel|clopidogrel bisulfate
+221124,metoprolol succinate,PIN,metoprolol succinate,exact,Kapspargo|Toprol|metoprolol|metoprolol succinate
+203563,Cipro,BN,cipro,exact,Cipro|cipro|ciprofloxacin|ciprofloxacin hydrochloride
+151399,Bactrim,BN,bactrim,exact,Bactrim|bactrim|sulfamethoxazole|trimethoprim
+38413,torsemide,IN,torsemide,exact,Soaanz|Upcard|torsemide
+274783,insulin glargine,IN,insulin glargine,exact,Basaglar|Lantus|Rezvoglar|Semglee|Soliqua|Toujeo|insulin glargine|insulin glargine-aglr|insulin glargine-yfgn
+6057,isosorbide,IN,isosorbide,exact,dimethyl isosorbide|isosorbide|isosorbide mononitrate
+301542,rosuvastatin,IN,rosuvastatin,exact,Crestor|Ezallor|Roszet|rosuvastatin|rosuvastatin calcium
+20352,carvedilol,IN,carvedilol,exact,Coreg|carvedilol|carvedilol phosphate
+4917,nitroglycerin,IN,nitroglycerin,exact,Gonitro|Nitro-Bid|Nitro-Dur|NitroMist|Nitrolingual|Nitrostat|Rectiv|nitroglycerin
+4917,nitroglycerin,IN,ntg,approximate,Gonitro|Nitro-Bid|Nitro-Dur|NitroMist|Nitrolingual|Nitrostat|Rectiv|nitroglycerin|ntg
+6470,lorazepam,IN,lorazepam,exact,Ativan|Loreev|lorazepam
+202479,Ativan,BN,ativan,exact,Ativan|ativan|lorazepam
+8782,propofol,IN,propofol,exact,Diprivan|Propoflo|Propovan|Propoven|propofol|propofol lipid emulsion
+8153,phentolamine,IN,phentolamine,exact,OraVerse|Ryzumvi|phentolamine|phentolamine mesylate
+227559,Levophed,BN,levophed,exact,Levophed|levophed|norepinephrine|norepinephrine bitartrate
+3443,diltiazem,IN,diltiazem,exact,Cardizem|Cartia|Dilt|Diltzac|Matzim|Taztia|Tiadylt|Tiazac|diltiazem|diltiazem hydrochloride|diltiazem malate
+7052,morphine,IN,morphine,exact,Duramorph|Infumorph|Kadian|MS Contin|Mitigo|morphine|morphine hydrochloride|morphine liposomal|morphine sulfate|morphine sulfate liposomal|morphine tartrate
+11289,warfarin,IN,warfarin,exact,Coumadin|Jantoven|warfarin|warfarin potassium|warfarin sodium
