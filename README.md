@@ -28,6 +28,9 @@ medical-extraction-solution/
 │   ├── icd10/
 │   │   ├── icd10_catalog_normalized.csv
 │   │   └── icd10_catalog_normalized.meta.json
+│   │   ├── icd10_mapping.csv
+│   │   ├── icd10_mapping.json
+│   │   └── icd10_mapping.meta.json
 │   └── rxnorm/
 │       └── rxnorm_mapping.csv
 ├── models/
@@ -49,6 +52,7 @@ medical-extraction-solution/
 │   └── submission_log.md
 ├── scripts/
 │   ├── prepare_icd10_catalog.py
+│   ├── build_icd10_mapping_json.py
 │   ├── run_pipeline.py
 │   ├── build_index.py
 │   ├── validate_output.py
@@ -116,6 +120,16 @@ python scripts/prepare_icd10_catalog.py
 - Kết quả sẽ tạo:
 	- `data/icd10/icd10_catalog_normalized.csv`
 	- `data/icd10/icd10_catalog_normalized.meta.json`
+
+- Build JSON mapping ICD-10 từ file CSV đã curate:
+
+```powershell
+python scripts/build_icd10_mapping_json.py
+```
+
+- Kết quả sẽ tạo:
+	- `data/icd10/icd10_mapping.json`
+	- `data/icd10/icd10_mapping.meta.json`
 
 ### Bước 3: Build index
 - Chạy script build_index.py để tạo icd10.index và rxnorm.index.

@@ -1,0 +1,27 @@
+{
+  "generated_at_utc": "2026-07-08T03:39:28.515204+00:00",
+  "source_csv": "data/icd10/icd10_mapping.csv",
+  "schema": {
+    "top_level": "icd10",
+    "fields": [
+      "code",
+      "disease_name_vi",
+      "disease_name_en",
+      "synonyms",
+      "source_csv_line"
+    ]
+  },
+  "stats": {
+    "row_count": 12219,
+    "entry_count": 12219,
+    "unique_code_count": 12218,
+    "duplicate_code_count": 1,
+    "duplicate_codes": [
+      "J13"
+    ],
+    "empty_vi_count": 0,
+    "empty_en_count": 1,
+    "empty_synonym_count": 10,
+    "rows_with_single_or_no_synonym_count": 4
+  }
+}
